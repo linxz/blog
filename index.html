@@ -1,11 +1,17 @@
 ---
 layout: default
-title: 我的Blog
+title: 小志的一些关于CSS的杂物储藏地
 ---
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-	{% for post in site.posts %}
-		<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
+<h1>{{ page.title }}</h1>
+<p style="line-height:1.5;color:#ababab;">平时偶尔总有那么一些时候突然间脑子里出现点什么，然后想写一写，结果想想自己把博客这东西丢掉了，也没什么地方可以写了，现在既然大家都在玩 github 这个东西，我也凑个热闹，在这里放一些平时突发神经而写下的文字……</p>
+<p style="line-height:1.5;color:#ababab;">别问为什么页面这么丑，因为我不会设计……</p>
+<p style="line-height:1.5;color:#ababab;">不会设计的我，也就没法写出什么样式，所以就只有这样了……</p>
+<hr>
+{% for category in site.categories %}
+<h2>{{ category | first }} <a href="#{{ category | first }}"></a></h2>
+<ul class="arc-list">
+    {% for post in category.last %}
+        <li>{{ post.date | date:"%Y-%m-%d"}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
 </ul>
+{% endfor %}

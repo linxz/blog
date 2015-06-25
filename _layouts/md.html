@@ -2,10 +2,17 @@
 <html lang="zh-cn">
 <head>
 <meta charset="UTF-8">
-<title>{{ page.title }}</title>
+<title>{{ page.title }} - 这篇文章是{{ page.author }}于{{ page.date | date:"%Y-%m-%d" }}整理所写的……</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui">
 <link rel="stylesheet" href="/blog/css/md.css">
 </head>
 <body>
+<div class="wrap">
 	{{ content }}
+	<div class="about">
+		<p>这篇文章是 {{ page.author }} 于 {{ page.date | date:"%Y-%m-%d" }} 整理所写的，如果觉得有不对不足的地方，那么请到 <a href="https://github.com/linxz/blog/issues">https://github.com/linxz/blog/issues</a> 中告知，感谢！</p>
+		<p>大家都放支付宝二维码，我要不要放呢，想来想去还是不放了吧，写得东西太烂了，没脸要大家的赞助……如果你真觉得不错，那就输入支付宝帐号吧…… <code>linxz@qq.com</code> (脸红……逃……</p>
+	</div>
+</div>
 </body>
 </html>

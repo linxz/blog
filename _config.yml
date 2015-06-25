@@ -1,1 +1,5 @@
 baseurl: /blog
+timezone: Asia/Shanghai
+permalink: /:categories/:year/:month/:title.html
+paginate: 2
+paginate_path: "page:num"
