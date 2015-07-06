@@ -229,6 +229,10 @@ demo: [http://jsbin.com/hitoji/1/](http://jsbin.com/hitoji/1/)
 
 ![background-size:cover的表现](/blog/img/2015-06/demo_14.gif)
 
+#### 相关讨论
+
+* 对background-size的建议: [https://github.com/linxz/blog/issues/1](https://github.com/linxz/blog/issues/1)
+
 ## 想想background也真神奇
 
 一个简单的`background`属性，现在折腾出来的效果也真的是多啊，如果把各种属性结合在一起，估计出现什么效果有时候自己都想象不到，尤其是新增的几个属性，特别是`background-origin`和`background-size`，改变了曾经对`background`的一些看法。
