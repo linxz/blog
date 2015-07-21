@@ -14,7 +14,7 @@ author: 林小志_linxz
 
 ## PDF下载
 
-[右击这里选择另存 下载PDF](/blog/img/进阶css从零开始突破.pdf) `文件大小：5,125,050 字节（磁盘上的 5.1 MB）`
+[右击这里选择另存 下载PDF](/blog/img/begin_css_form_zero.pdf) `文件大小：5,125,050 字节（磁盘上的 5.1 MB）`
 
 ## 更新 
 
