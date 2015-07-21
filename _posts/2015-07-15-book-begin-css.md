@@ -14,7 +14,11 @@ author: 林小志_linxz
 
 ## PDF下载
 
-[右击这里选择另存 下载PDF](/blog/img/进阶css从零开始突破.pdf) `文件大小：5,056,580 字节（磁盘上的 5.1 MB）`
+[右击这里选择另存 下载PDF](/blog/img/进阶css从零开始突破.pdf) `文件大小：5,125,050 字节（磁盘上的 5.1 MB）`
+
+## 更新 
+
+* **2015-7-21** 根据 [https://github.com/linxz/blog/issues/2](https://github.com/linxz/blog/issues/2) 提示修正层叠顺序的错误，感谢 **[hbkdsm](https://github.com/hbkdsm)**
 
 ## 目前章节
 
