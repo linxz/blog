@@ -14,7 +14,7 @@ author: 林小志_linxz
 
 ## PDF下载
 
-[右击这里选择另存 下载PDF](/blog/img/begin_css_form_zero.pdf) `文件大小：5,125,050 字节（磁盘上的 5.1 MB）`
+<a href="http://pan.baidu.com/s/1nt1jBqL" target="_blank">点击新窗口打开 百度网盘 阅读或者下载</a> `文件大小：5,125,050 字节（磁盘上的 5.1 MB）`
 
 ## 更新 
 
