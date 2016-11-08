@@ -1,6 +1,6 @@
 body {
-  font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
+  font-family: Arial, Roboto, 'Droid Sans', 'Hiragino Sans GB', 'Microsoft YaHei', 'Simsun', STXihei, 'sans-serif';;
+  font-size: 15px;
   line-height: 1.6;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -293,5 +293,5 @@ white-space: pre-wrap;
 	}
 }
 
-.about {overflow: hidden;padding: 5px;color: #aaa;border: 1px solid #e8e8e8;border-radius: 5px;}
+.about {font-size: 13px;overflow: hidden;padding: 5px;color: #aaa;border: 1px solid #e8e8e8;border-radius: 5px;}
 .about p {margin: 0;}
