@@ -1,0 +1,5 @@
+.DS_Store
+.vscode
+.git
+_site/
+.jekyll-cache/
