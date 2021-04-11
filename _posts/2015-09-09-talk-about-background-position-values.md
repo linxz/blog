@@ -1,13 +1,12 @@
 ---
-layout: md
+layout: post
 title: 闲扯 background-position 的单位属性值
-category: CSS属性基础
-author: 林小志_linxz
+tag: CSS属性基础
+author: 林小志
+excerpt_separator: <!--more-->
 ---
 
-# 闲扯 background-position 的单位属性值
-
-其实对于 `background-position` 这个 **CSS** 属性有多少个属性值，大家一查就知道就知道了，这里我想说的是今天扯这个属性值，是因为自己在无意间看到有朋友在阅读了[《CSS那些事儿》之后的一个读后感](http://www.cnblogs.com/langjt/p/4281477.html)中提到了一点：
+其实对于 `background-position` 这个 **CSS** 属性有多少个属性值，大家一查就知道就知道了，这里我想说的是今天扯这个属性值，是因为自己在无意间看到有朋友在阅读了<!--more-->[《CSS那些事儿》之后的一个读后感](http://www.cnblogs.com/langjt/p/4281477.html)中提到了一点：
 
 > 属性值为百分比时，将以图片的 **中心点** 为基准计算其相对位置，而使用px像素值时将以图片的 **左上角** 为基准。
 

@@ -1,4 +1,15 @@
 baseurl: /blog
 timezone: Asia/Shanghai
-permalink: /:categories/:year/:month/:title.html
-paginate_path: "page:num"
+permalink: :slug
+theme: jekyll-theme-leaf
+iconURL: ./assets/header.png
+title: 志语自乐
+
+social:
+  github: linxz
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+### comments & analytics
+google_analytics: G-FKW5C8KY5G

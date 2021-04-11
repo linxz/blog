@@ -1,0 +1,26 @@
+.site-footer {
+  margin-top: 20px;
+  box-shadow: 0 -1px 0 0 #292929;
+  .footer {
+      display:flex;
+      padding:15px;
+      padding-bottom:40px;
+  }
+}
+
+.footer-title {
+  flex:1;
+}
+
+.footer-social-links {
+  svg {
+      width:20px;
+      height:20px;
+      fill: $theme-color;
+  }
+  a {
+      &:not(:first-child) {
+          margin-left:6px;
+      }
+  }
+}

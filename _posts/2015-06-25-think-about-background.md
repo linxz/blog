@@ -1,11 +1,9 @@
 ---
-layout: md
+layout: post
 title: 回味background
-category: CSS属性基础
-author: 林小志_linxz
+tag: CSS属性基础
+author: 林小志
 ---
-
-# 回味background
 
 `background`是在CSS中使用率很高的一个属性之一，由最初的几个简单的属性到现在新增了很多的属性，比如`background-size`、`background-origin`以及`background-clip`等属性，还可以设置**多背景**来达到更多的炫酷效果。
 
@@ -42,11 +40,12 @@ author: 林小志_linxz
 ![background-color 效果图](/blog/img/2015-06/demo_01.png)
 
 demo: [http://jsbin.com/fiyazayuho/2/](http://jsbin.com/fiyazayuho/2/)
-
-	div {float: left;width: 200px;height: 60px;border: 5px dashed #f00;margin:0 20px 20px 0;padding:30px;background-color: #ff0;}
-	div + div {background-clip: border-box;}
-	div + div + div {background-clip: padding-box;}
-	div + div + div + div {background-clip: content-box;}
+```css
+div {float: left;width: 200px;height: 60px;border: 5px dashed #f00;margin:0 20px 20px 0;padding:30px;background-color: #ff0;}
+div + div {background-clip: border-box;}
+div + div + div {background-clip: padding-box;}
+div + div + div + div {background-clip: content-box;}
+```
 
 ### background-image
 
@@ -64,17 +63,20 @@ demo: [http://jsbin.com/fiyazayuho/2/](http://jsbin.com/fiyazayuho/2/)
 
 demo: [http://jsbin.com/lusuce/1/](http://jsbin.com/lusuce/1/)
 
-	div {width: 100px;height: 50px;padding: 50px;
-		background-color:#ccc;
-		background-image:url(http://sfault-avatar.b0.upaiyun.com/166/281/166281916-1140000000145114_big64);
-		background-repeat: no-repeat;
-	}
+```css
+div {width: 100px;height: 50px;padding: 50px;
+	background-color:#ccc;
+	background-image:url(http://sfault-avatar.b0.upaiyun.com/166/281/166281916-1140000000145114_big64);
+	background-repeat: no-repeat;
+}
 
-	div ~ div {
-		background-image: url(http://sfault-avatar.b0.upaiyun.com/604/519/6045191-1140000000383699_big64), url(http://sfault-avatar.b0.upaiyun.com/166/281/166281916-1140000000145114_big64), url(http://sfault-avatar.b0.upaiyun.com/393/562/3935623170-1140000000142909_big64), url(http://sfault-avatar.b0.upaiyun.com/287/570/2875704635-1140000000145753_big64);
-		background-position:top left, top right, bottom left, bottom right;
-	}
-	
+div ~ div {
+	background-image: url(http://sfault-avatar.b0.upaiyun.com/604/519/6045191-1140000000383699_big64), url(http://sfault-avatar.b0.upaiyun.com/166/281/166281916-1140000000145114_big64), url(http://sfault-avatar.b0.upaiyun.com/393/562/3935623170-1140000000142909_big64), url(http://sfault-avatar.b0.upaiyun.com/287/570/2875704635-1140000000145753_big64);
+	background-position:top left, top right, bottom left, bottom right;
+}
+```
+
+
 ### background-position
 
 背景定位这个东西写CSS的朋友肯定都知道怎么用，不然就玩不了**CSS Sprite**，不过大家一般用的时候，属性值都是`top`、`left`、`center`、`bottom`等组合，或者要么就是百分值和px值这几种，对于这几种大家都已经很属性了，也没什么好说的，都是相对于容器的左上角来计算的。
@@ -99,13 +101,15 @@ demo: [http://jsbin.com/lusuce/1/](http://jsbin.com/lusuce/1/)
 
 demo: [http://jsbin.com/hitoji/1/](http://jsbin.com/hitoji/1/)
 
-	div {width: 50px;height: 50px;border: 10px dashed #f00;padding:20px;
-		background-image: url(http://sfault-avatar.b0.upaiyun.com/196/388/1963885910-54af96065b546_big64);
-		background-repeat: no-repeat;
-		background-origin: border-box;
-	}
-	div ~ div {background-origin: padding-box;}
-	div ~ div ~ div {background-origin: content-box;}
+```css
+div {width: 50px;height: 50px;border: 10px dashed #f00;padding:20px;
+	background-image: url(http://sfault-avatar.b0.upaiyun.com/196/388/1963885910-54af96065b546_big64);
+	background-repeat: no-repeat;
+	background-origin: border-box;
+}
+div ~ div {background-origin: padding-box;}
+div ~ div ~ div {background-origin: content-box;}
+```
 	
 从这里可以看到三个值的改变之后，效果背景图片的所在位置就完全不一样了，不过在背景中还有一个新增的属性，再加上去后，会发现更不一样的效果。
 
@@ -131,12 +135,14 @@ demo: [http://jsbin.com/hitoji/1/](http://jsbin.com/hitoji/1/)
 
 然后从分别看他们的区别吧，这样应该就能让我自己清楚了，或许也能让你们在看这里的时候也清楚了。
 
-	body {height: 1000px;}
-	div {width: 300px;height: 300px;border: 1px solid #f00;
-		background-image:url(http://sfault-avatar.b0.upaiyun.com/286/347/2863479281-1030000000341132_huge256);
-		background-repeat: no-repeat;
-		background-attachment: scroll; /* 会在这里改变属性值 */
-	}
+```css
+body {height: 1000px;}
+div {width: 300px;height: 300px;border: 1px solid #f00;
+	background-image:url(http://sfault-avatar.b0.upaiyun.com/286/347/2863479281-1030000000341132_huge256);
+	background-repeat: no-repeat;
+	background-attachment: scroll; /* 会在这里改变属性值 */
+}
+```
 
 首先是默认的属性值`scroll`：
 
@@ -243,24 +249,31 @@ demo: [http://jsbin.com/hitoji/1/](http://jsbin.com/hitoji/1/)
 
 用英文半角逗号隔开，如果要用简写模式的话，那么就先写完一个`background`简写属性后，再用`,`半角逗号隔开，继续写，如：
 
-	background: url(a.png) top left no-repeat,
-                url(b.png) center / 100% 100% no-repeat,
-                url(c.png) white;
+```css
+background: url(a.png) top left no-repeat,
+						url(b.png) center / 100% 100% no-repeat,
+						url(c.png) white;
+```
 
 ### background 简写模式
 
 以前没有那么多新增属性的时候，简写就是：
 
-	background: url(a.png) top left no-repeat fixed #000;
+```css
+background: url(a.png) top left no-repeat fixed #000;
+```
 	
 现在有了之后，就稍微改变了一下，不过也相差不多：
 
-	background: url(a.png) top left / cover no-repeat fixed content-box content-box #000
+```css
+background: url(a.png) top left / cover no-repeat fixed content-box content-box #000
+```
 	
 格式就是：
-	 
-	 <bg-image> || <position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> || <'background-color'>	
-	 
+```
+<bg-image> || <position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> || <'background-color'>	
+```
+
 ## 最后想说
 
 `background`的规则是这样，但是最终如果多个属性结合在一起，真不知道会变成什么样。看着是一个个很简单的属性，但是多个在一起，或许会让背景更漂亮，或许也会让你的背景变得很难看……
