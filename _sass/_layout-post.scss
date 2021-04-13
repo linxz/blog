@@ -76,6 +76,10 @@ article, .comments, .box {
   margin: 0;
   zoom: 0.5;
   background-color: #fdc900;
+  transition: background-color 300ms ease-out;
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 .post-meta {
