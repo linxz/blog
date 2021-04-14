@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 闲扯 background-position 的单位属性值
-tag: CSS属性基础
+tag: CSS基础
 author: 林小志
 excerpt_separator: <!--more-->
 ---

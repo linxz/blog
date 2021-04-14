@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 回味background
-tag: CSS属性基础
+tag: CSS基础
 author: 林小志
 ---
 
