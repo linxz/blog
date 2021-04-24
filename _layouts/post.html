@@ -26,10 +26,12 @@ layout: default
     {%- if page.author -%}
     • {% for author in page.author %}
     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+      <span class="p-author h-card" itemprop="name"><a href="https://github.com/linxz/"
+          target="_blank">{{ author }}</a></span></span>
     {%- if forloop.last == false %}, {% endif -%}
     {% endfor %}
     • {{ page.tags }}
+    • <a href="https://github.com/linxz/blog/issues" target="_blank">issue</a>
     {%- endif -%}
   </p>
 
