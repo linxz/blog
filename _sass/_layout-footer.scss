@@ -24,3 +24,15 @@
       }
   }
 }
+
+#search-demo-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  #search-input {
+    height: 36px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    font-size: 19px;
+  }
+}
