@@ -5,6 +5,8 @@ layout: about
 
 ![头像](./assets/mpWeiXin.png)
 
+* [几个不一定大家都知道的有关微信使用小技巧](https://mp.weixin.qq.com/s/XYNMIwwsJpXBXgXlGt1htA) 2021-9-7
+* [@scroll-timeline 让页面滚动不仅仅是单纯的页面滚动](https://mp.weixin.qq.com/s/DdQrxdA2C4KOivScDqKvbw) 2021-9-3
 * [CSS 绘制「漫画」场景](https://mp.weixin.qq.com/s/Z947tO_hDfZMjIaJ2ERzZg) 2021-8-25
 * [冷门的 text-emphasis有什么用呢？](https://mp.weixin.qq.com/s/OJC-CzSPcZbPST0SE_pafQ) 2021-7-2
 * [说一下冷门的 tab-size 属性](https://mp.weixin.qq.com/s/EROPt4TIuJz4ifkkoNdgqA) 2021-6-21
