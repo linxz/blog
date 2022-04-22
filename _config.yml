@@ -1,7 +1,7 @@
 baseurl: /blog
 timezone: Asia/Shanghai
 permalink: :slug
-theme: jekyll-theme-leaf
+theme: jekyll-theme-slate
 iconURL: ./assets/header.png
 title: 志语自乐
 
