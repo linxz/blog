@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
 {%- include head.html -%}
 
 <body>
 
-    {%- include header.html -%}
+	{%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
+	<main class="page-content" aria-label="Content">
+		<div class="wrapper">
+			{{ content }}
+		</div>
 
-        <div class="wrapper">
-            <div id="search-demo-container">
-                <input type="search" id="search-input" placeholder="search...">
-                <ul id="results-container"></ul>
-            </div>
-        </div>
-    </main>
+		<div class="wrapper">
+			<div id="search-demo-container">
+				<input type="search" id="search-input" placeholder="search...">
+				<ul id="results-container"></ul>
+			</div>
+		</div>
+	</main>
 
-    {%- include footer.html -%}
+	{%- include footer.html -%}
 
 </body>
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 <script>
-    window.simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '{{ site.baseurl }}/search.json',
-        searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-        noResultsText: 'No results found',
-        limit: 10,
-        fuzzy: false,
-        exclude: ['Welcome']
-    })
+	window.simpleJekyllSearch = new SimpleJekyllSearch({
+		searchInput: document.getElementById('search-input'),
+		resultsContainer: document.getElementById('results-container'),
+		json: '{{ site.baseurl }}/search.json',
+		searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+		noResultsText: 'No results found',
+		limit: 10,
+		fuzzy: false,
+		exclude: ['Welcome']
+	})
 </script>
+
 </html>

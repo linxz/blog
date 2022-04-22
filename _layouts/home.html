@@ -3,27 +3,20 @@ layout: default
 ---
 
 <div class="home">
-
   {{ content }}
 
   {% assign posts = site.posts %}
-
 
   {%- if posts.size > 0 -%}
   {%- if page.list_title -%}
   <h2 class="post-list-heading">{{ page.list_title }}</h2>
   {%- endif -%}
   <div class="box home-box">
-    <div class="post-list">
+    <ul class="post-list">
       {%- for post in posts -%}
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        <h3>{{ post.title | escape }}</h3>
-        {{ post.excerpt }}
-      </a>
+      <li><a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title | escape }}</a></li>
       {%- endfor -%}
-    </div>
+    </ul>
   </div>
-
   {%- endif -%}
-
 </div>
