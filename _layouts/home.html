@@ -12,6 +12,7 @@ layout: default
   <h2 class="post-list-heading">{{ page.list_title }}</h2>
   {%- endif -%}
   <div class="box home-box">
+    <h4 class="post-list-title">博客文章列表</h4>
     <ul class="post-list">
       {%- for post in posts -%}
       <li><a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title | escape }}</a></li>
