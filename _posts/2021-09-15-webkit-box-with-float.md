@@ -105,7 +105,7 @@ tag 独占一行，说明至少有类似 **block** 块级元素的特性存在�
 
 那么就按照这个思路，我们可以看看 flex 相关的资料文档。
 
-在之前的 flex 教程文档（https://www.yuque.com/linxz/flex）有关 `display: flex;` 有过介绍，前面也提到了 **FFC**，那么具体的我们也可以从 w3c 文档中看到：
+在之前的 flex 教程文档（https://linxz.github.io/flex_learn_manual/）有关 `display: flex;` 有过介绍，前面也提到了 **FFC**，那么具体的我们也可以从 w3c 文档中看到：
 
 > A flex container establishes a new flex formatting context for its contents. This is the same as establishing a block formatting context, except that flex layout is used instead of block layout. For example, floats do not intrude into the flex container, and the flex container’s margins do not collapse with the margins of its contents. Flex containers form a containing block for their contents exactly like block containers do. [CSS21] The overflow property applies to flex containers.
 
