@@ -14,6 +14,10 @@
       display:block;
       padding: $spacing-unit / 6 0;
       transition: .3s color;
+      &[title="网站变灰了？没事，这样改改就可以看到彩色的页面了……"] {
+        text-decoration: line-through;
+        pointer-events: none;
+      }
       &:not(:last-child) {
         border-bottom: 1px solid $header-color;
       }
